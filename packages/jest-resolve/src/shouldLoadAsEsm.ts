@@ -40,7 +40,7 @@ function shouldLoadAsEsm(path: Config.Path): boolean {
 
   const extension = extname(path);
 
-  if (extension === '.mjs') {
+  if (extension === '.mjs' || extension === '.ts') {
     return true;
   }
 
